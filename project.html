@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Snackers Point</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="project.css" type="text/css">
+        <script src="project.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <aside class="left">
+            <ul>
+                <img class="img7" src="snackerspoint" >
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#order">Your Orders</a></li>
+                <li><a href="#wishlist">Wishlists</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </aside>
+        <nav>
+            <ul>
+                <li><input class="search" type="searchbar" placeholder="search" ></li>
+                <li><button type="button" class="btn" name="offers" id="offers"><span><i class="bi bi-tags-fill"></i></span>Offers</button></li>
+                <li><button type="button" class="btn" name="cart" id="cart" ><span><i class="bi bi-cart-dash-fill"></i></span>Cart</button></li>
+                <li style="float:right"><button type="button" class="btn" name="simplilearn" id="simplilearn" ><span><i class="bi bi-person-circle"></i></span>Simplilearn</button></li>
+                
+            </ul>
+        </nav>
+        <aside class="right">
+            <ul>
+                <h1>Go for Hunt</h1>
+                <li style="display: flex; align-items: center; justify-content: center;"><img src="biryani1.avif" style="display: flex; align-items: center; justify-content: center;"><a href="#biryani" style="display: flex;font-weight: bold;">Biryani</a></li>
+                <li style="display: flex; align-items: center; justify-content: center;"><img src="Spicy-Chicken.webp" style="display: flex; align-items: center; justify-content: center;"><a href="#chicken" style="display: flex;font-weight: bold;">Chicken</a></li>
+                <li style="display: flex; align-items: center; justify-content: center;"><img src="paneer1.jpeg" style="display: flex; align-items: center; justify-content: center;"><a href="#paneer" style="display: flex;font-weight: bold;">Paneer</a></li>
+                <li style="display: flex; align-items: center; justify-content: center;"><img src="vegi.webp" style="display: flex; align-items: center; justify-content: center;"><a href="#vegi" style="display: flex;font-weight: bold;">Vegetables</a></li>
+                <li style="display: flex; align-items: center; justify-content: center;"><img src="chineese.jpeg" style="display: flex; align-items: center; justify-content: center;"><a href="#chineese" style="display: flex;font-weight: bold;">Chineese</a></li>
+                <li style="display: flex; align-items: center; justify-content: center;"><img src="pizza.jpeg" style="display: flex; align-items: center; justify-content: center;"><a href="#pizza" style="display: flex;font-weight: bold;">Pizza</a></li>
+             </ul>
+        </aside>
+        <section class="home" id="#">
+        <div class="card-container">
+            <div class="card">
+                <div> 
+                    <span class="badge rounded-pill bg-success"><i class="bi bi-star-fill"></i>4.6</span>                    
+                    <i class="far fa-heart" id="heart1" style="position:relative; right:-150px;" onclick="addwishlist('heart1','biryani1.avif','Chicken Dum Biryani','$44')"></i>
+                </div>
+                <img class="card-img-top" src="biryani1.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Dum Biryani</h5>
+                    <p class="card-text">Price:$44</p>
+                    <a href="#" class="btn btn-primary"><span><i class="bi bi-file-plus-fill"></i></span>Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <div> 
+                    <span class="badge rounded-pill bg-success"><i class="bi bi-star-fill"></i>4.2</span>                    
+                    <i class="far fa-heart" id="heart2" style="position:relative;right: -150px;" onclick="addwishlist('heart2','biryani2.avif','chicken fry biryani','$50')"></i>
+                </div>
+                <img class="card-img-top" src="biryani2.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Fry Biryani</h5>
+                    <p class="card-text">Price:$50</p>
+                    <a href="#" class="btn btn-primary"><span><i class="bi bi-file-plus-fill"></i></span>Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <div> 
+                    <span class="badge rounded-pill bg-success"><i class="bi bi-star-fill"></i>4.8</span>                    
+                    <i class="far fa-heart" id="heart3" style="position:relative; right:-150px;" onclick="addwishlist('heart3','biryani5.avif','chicken mugulai biryani','$52')" ></i>
+                </div>
+                <img class="card-img-top" src="biryani5.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Mugulai Biryani</h5>
+                    <p class="card-text">Price:$52</p>
+                    <a href="#" class="btn btn-primary"><span><i class="bi bi-file-plus-fill"></i></span>Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <div> 
+                    <span class="badge rounded-pill bg-success"><i class="bi bi-star-fill"></i>4.0</span>                    
+                    <i class="far fa-heart" id="heart4" style="position:relative;right: -150px;" onclick="addwishlist('heart4','biryani6.avif','chicken kadai biryani','$40')"></i>
+                </div>
+                <img class="card-img-top" src="biryani6.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken kadai Biryani</h5>
+                    <p class="card-text">Price:$40</p>
+                    <a href="#" class="btn btn-primary"><span><i class="bi bi-file-plus-fill"></i></span>Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <div> 
+                    <span class="badge rounded-pill bg-success"><i class="bi bi-star-fill"></i>4.2</span>                    
+                    <i class="far fa-heart" id="heart5" style="position:relative;right: -150px;" onclick="addwishlist('heart5','wing2','chicken wings biryani','$60')"></i>
+                </div>
+                <img class="card-img-top" src="wing2" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken wings Biryani</h5>
+                    <p class="card-text">Price:$60</p>
+                    <a href="#" class="btn btn-primary"><span><i class="bi bi-file-plus-fill"></i></span>Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <div> 
+                    <span class="badge rounded-pill bg-success"><i class="bi bi-star-fill"></i>4.6</span>                    
+                    <i class="far fa-heart" id="heart6" style="position:relative;right: -150px;" onclick="addwishlist('heart6','egg','egg biryani','$35')"></i>
+                </div>
+                <img class="card-img-top" src="egg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">egg Biryani</h5>
+                    <p class="card-text">Price:$35</p>
+                    <a href="#" class="btn btn-primary"><span><i class="bi bi-file-plus-fill"></i></span>Cart</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="wishlist" id="wishlist">
+            <div class="container">
+                 <table class="table" id="wishlistTable">
+                    <thead>
+                        <th>Item</th>
+                        <th style="text-align: center;">Price</th>
+                    </thead>
+                    <tbody id="wishlistItems">
+        
+                    </tbody>  
+              </table>
+            </div>
+        </section>
+    </main>
+    <script>
+        <button type="button" onclick="window.print()">Print this page</button>
+    </script>
+    </body>
+</html>
